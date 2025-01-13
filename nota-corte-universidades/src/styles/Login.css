@@ -1,0 +1,103 @@
+/* src/styles/Login.css */
+
+/* Define o estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte usada na página */
+    background: linear-gradient(135deg, #6b63ff, #72edf2); /* Aplica um gradiente de fundo */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove os preenchimentos padrão */
+    display: flex; /* Usa Flexbox para alinhar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura como 100% da altura da janela */
+  }
+  
+  /* Estilo do container principal de login */
+  .login-container {
+    background-color: #fff; /* Define o fundo como branco */
+    padding: 2rem; /* Adiciona espaço interno ao redor do conteúdo */
+    border-radius: 10px; /* Deixa as bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar o container */
+    width: 100%; /* Faz o container ocupar toda a largura disponível */
+    max-width: 400px; /* Define uma largura máxima para o container */
+    text-align: center; /* Centraliza o texto no container */
+  }
+  
+  /* Estilo do título da página */
+  .login-container h2 {
+    color: #333; /* Define a cor do texto como cinza escuro */
+    margin-bottom: 1.5rem; /* Adiciona espaço abaixo do título */
+  }
+  
+  /* Estilo do formulário para centralizar inputs e botões */
+  .login-container form {
+    display: flex; /* Usa Flexbox para alinhar os itens no formulário */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    gap: 1rem; /* Define o espaço entre os elementos do formulário */
+    align-items: center; /* Centraliza os itens horizontalmente */
+  }
+  
+  /* Estilo dos campos de entrada de texto */
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    padding: 0.8rem; /* Adiciona espaço interno aos campos */
+    border: 1px solid #ddd; /* Define uma borda cinza clara */
+    border-radius: 5px; /* Deixa as bordas arredondadas */
+    font-size: 1rem; /* Define o tamanho da fonte */
+    width: 100%; /* Faz o campo ocupar toda a largura do formulário */
+    max-width: 300px; /* Define uma largura máxima para os campos */
+    outline: none; /* Remove o contorno padrão ao focar */
+    transition: border-color 0.3s ease; /* Adiciona uma transição suave na borda */
+  }
+  
+  /* Altera a borda ao focar nos campos */
+  .login-container input[type="text"]:focus,
+  .login-container input[type="password"]:focus {
+    border-color: #6b63ff; /* Define uma cor de borda ao focar */
+  }
+  
+    /* Estilo dos botões */
+    .login-container button {
+        padding: 0.8rem; /* Adiciona espaço interno ao botão */
+        border: none; /* Remove as bordas padrão */
+        border-radius: 5px; /* Deixa as bordas arredondadas */
+        font-size: 1rem; /* Define o tamanho da fonte */
+        cursor: pointer; /* Muda o cursor para indicar um botão clicável */
+        background-color: #6b63ff; /* Define a cor de fundo */
+        color: white; /* Define a cor do texto */
+        width: 100%; /* Faz o botão ocupar toda a largura do formulário */
+        max-width: 300px; /* Define uma largura máxima para os botões */
+        transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo */
+        display: flex; /* Torna o botão um contêiner flex */
+        justify-content: center; /* Centraliza o texto horizontalmente */
+        align-items: center; /* Centraliza o texto verticalmente */
+        text-align: center; /* Garante que o texto fique centralizado */
+    }
+  
+  /* Altera a cor de fundo ao passar o mouse sobre o botão */
+  .login-container button:hover {
+    background-color: #5753d7; /* Escurece a cor de fundo */
+  }
+  
+  /* Estilo especial para o botão "Cadastrar" */
+  .login-container button:last-child {
+    background-color: #72edf2; /* Define uma cor de fundo diferente */
+    color: #333; /* Define a cor do texto */
+  }
+  
+  /* Altera a cor de fundo do botão "Cadastrar" ao passar o mouse */
+  .login-container button:last-child:hover {
+    background-color: #5bcad2; /* Escurece a cor de fundo */
+  }
+  
+  /* Estilo responsivo para telas menores */
+  @media (max-width: 768px) {
+    .login-container {
+      padding: 1.5rem; /* Reduz o preenchimento interno em telas menores */
+    }
+  
+    .login-container h2 {
+      font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+  }
+  

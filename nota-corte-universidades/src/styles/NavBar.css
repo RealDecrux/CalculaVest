@@ -1,0 +1,49 @@
+/* Estilo geral do NavBar */
+.navbar {
+  position: fixed; /* Fixa o navbar no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  /* Distribui o espaço entre os itens, colocando Login à esquerda e os outros à direita */
+  align-items: center;  /* Garante que o conteúdo do Header fique alinhado verticalmente */
+  background-color: #001529; /* Cor de fundo do NavBar */
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Garantir que o navbar fique por cima */
+  border-top-left-radius: 20px;  /* Borda arredondada no canto superior esquerdo */
+  border-bottom-left-radius: 20px;  /* Borda arredondada no canto inferior esquerdo */
+  border-top-right-radius: 0;  /* Sem borda arredondada no canto superior direito */
+  border-bottom-right-radius: 0;  /* Sem borda arredondada no canto inferior direito */
+  border-right: 4px solid #3498db; /* Borda infinita (ou contínua) à direita */
+}
+
+/* Customizando o menu */
+.menu {
+  display: flex;
+  justify-content: flex-end;  /* Alinha os itens do menu à direita */
+  width: 100%; /* Faz o menu ocupar toda a largura disponível */
+  flex-grow: 1;  /* Permite que o menu ocupe o restante do espaço disponível */
+}
+
+.menu-item {
+  text-align: right;
+}
+
+/* Estilo do Menu quando em dispositivos menores */
+@media screen and (max-width: 768px) {
+  .menu {
+    font-size: 14px;
+  }
+
+  /* Personalização do botão de Login */
+  .ant-btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+
+  .ant-btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+  }
+}

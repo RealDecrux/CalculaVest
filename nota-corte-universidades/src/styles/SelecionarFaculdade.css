@@ -1,0 +1,30 @@
+/* src/styles/SelecionarFaculdade.css */
+.select-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 100vh; /* Faz o contêiner ocupar toda a altura da página */
+}
+
+label {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 50%; /* Define a largura do select como 50% do contêiner */
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px; /* Torna as bordas mais arredondadas */
+  border: 1px solid #ccc;
+  background-color: #f6f6f6;
+  text-align: center; /* Alinha o texto dentro do select */
+}
+
+select:focus {
+  border-color: #3F729B;
+  outline: none;
+}
+
