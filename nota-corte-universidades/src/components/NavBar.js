@@ -40,15 +40,18 @@ const NavBar = () => {
           <Menu.Item key="1" icon={<HomeOutlined />}>
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<CalculatorOutlined />}>
+          {/*<Menu.Item key="2" icon={<CalculatorOutlined />}>
             <Link to="/Login">Login</Link>
           </Menu.Item>
+          */}
           <Menu.Item key="3" icon={<CalculatorOutlined />}>
             <Link to="/calculo">Calcular Notas</Link>
           </Menu.Item>
+          {/*
           <Menu.Item key="4" icon={<BarChartOutlined />}>
             <Link to="/grafico">Gráficos</Link>
           </Menu.Item>
+          */}
         </Menu>
       </Header>
 
