@@ -1,0 +1,44 @@
+/* Container para centralizar o conteúdo */
+.select-container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 10vh; /* Faz o container ocupar a altura total da página */
+    text-align: center; /* Alinha o texto do rótulo no centro */
+}
+
+/* Estilo do label */
+.select-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Estilo do select (dropdown) */
+.select-dropdown {
+    width: 80%;
+    max-width: 300px; /* Aumenta a largura máxima para ser mais visível */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background-color: #ffffffd7;
+    text-align: center; /* Alinha o texto do item dentro do select */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Estilo ao focar no select */
+.select-dropdown:focus {
+    border-color: #007BFF;
+    background-color: #e9f3fe;
+}
+
+/* Estilo das opções dentro do select */
+.select-dropdown option {
+    padding: 10px;
+    text-align: center; /* Garante que o texto nas opções também fique centralizado */
+}

@@ -1,0 +1,16 @@
+/* src/styles/Resultado.css */
+.resultado-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .resultado-container h2 {
+    font-size: 2rem;
+    color: #3F729B;
+  }
+  
+  .resultado-container p {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  

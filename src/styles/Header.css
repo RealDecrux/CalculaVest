@@ -1,0 +1,45 @@
+/* src/components/Header.css */
+.header-container {
+  background: linear-gradient(135deg, rgba(255, 111, 97, 0.8), rgba(255, 159, 64, 0.8));
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer; /* Cursor para indicar que é clicável */
+}
+
+.header-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.header-container h1,
+.header-subtitle {
+  font-size: inherit;
+  font-family: inherit;
+  user-select: none; /* Impede a seleção de texto */
+  pointer-events: none; /* Evita interação direta com o texto */
+}
+
+.header-container h1 {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ffffff, #ffd3a7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

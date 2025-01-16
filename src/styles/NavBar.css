@@ -1,0 +1,52 @@
+/* Estilo geral do NavBar */
+.navbar {
+  position: fixed; /* Fixa o navbar no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #ff6f61, #ff9f40); /* Mesma paleta do HEADER */
+  padding: 15px 20px; /* Espaçamento interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  z-index: 1000; /* Garante que o navbar fique sobre outros elementos */
+  border-end-end-radius: 20px; /* Bordas arredondadas */
+  border-end-start-radius: 20px; /* Bordas arredondadas */
+  display: flex; /* Usa flexbox para layout */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo do Menu */
+.menu {
+  display: flex; /* Exibe os itens lado a lado */
+  gap: 20px; /* Espaçamento horizontal entre os itens */
+  list-style: none; /* Remove as bolinhas da lista */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove padding */
+  background: none; /* Remove fundo padrão do Ant Design */
+  border: none; /* Remove bordas padrão */
+}
+
+/* Estilo dos itens individuais */
+.menu-item {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white; /* Texto em branco para contraste */
+  text-transform: uppercase; /* Deixa o texto em letras maiúsculas */
+  text-decoration: none; /* Remove o sublinhado */
+  padding: 10px 20px; /* Adiciona espaçamento interno nos itens */
+  border-radius: 10px; /* Bordas arredondadas dos itens */
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Efeito de hover */
+  background: linear-gradient(45deg, #ff6f61, #ff9f40); /* Mesma cor do navbar */
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.2); /* Fundo branco translúcido no hover */
+  transform: scale(1.05); /* Leve aumento no hover */
+}
+
+/* Remove o fundo padrão dos itens selecionados do Ant Design */
+.ant-menu-item-selected {
+  background: linear-gradient(45deg, #ff6f61, #ff9f40) !important; /* Mesma cor do navbar */
+  color: rgb(0, 0, 0) !important;
+}
